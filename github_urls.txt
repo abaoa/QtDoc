@@ -1,3 +1,4 @@
+https://gitee.com/xuxincode/pictureflow.git
 https://github.com/abaoa/QtDoc.git
 https://github.com/asweigart/pyautogui.git
 https://github.com/bajins/NSIS_SetupSkin.git
