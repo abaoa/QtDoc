@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <snippets>
-    <snippet group="Text" trigger="baodebug" id="" complement="" removed="false" modified="false">qDebug() &lt;&lt; &quot;$Text$ = &quot; &lt;&lt; $Text$;</snippet>
+    <snippet group="Text" trigger="baodebug" id="" complement="" removed="false" modified="false">qDebug() &lt;&lt; &quot;$text$ = &quot; &lt;&lt; $text$;</snippet>
     <snippet group="Text" trigger="baodebug2" id="" complement="" removed="false" modified="false">qDebug() &lt;&lt; &quot; = &quot; &lt;&lt; ;</snippet>
-    <snippet group="Text" trigger="baodebugText" id="" complement="" removed="false" modified="false">qDebug() &lt;&lt; &quot;$Text$&quot;;</snippet>
+    <snippet group="Text" trigger="baodebugFunc" id="" complement="" removed="false" modified="false">qDebug() &lt;&lt; __FUNCTION__;</snippet>
+    <snippet group="Text" trigger="baodebugText" id="" complement="" removed="false" modified="false">qDebug() &lt;&lt; &quot;$text$&quot;;</snippet>
     <snippet group="Text" trigger="baofori" id="" complement="" removed="false" modified="false">for (int i = 0; i &lt; $total$; i++)
 {
     $$
@@ -27,15 +28,46 @@ $layout$-&gt;setMargin(0);
 $layout$-&gt;addWidget(minBox,1);
 $layout$-&gt;addWidget(label,8);
 $layout$-&gt;addWidget(maxBox,1);</snippet>
+    <snippet group="Text" trigger="baoifArm" id="" complement="" removed="false" modified="false">#ifdef __arm__
+
+#endif</snippet>
+    <snippet group="Text" trigger="baoifDebug" id="" complement="" removed="false" modified="false">#ifdef QT_DEBUG
+
+#endif</snippet>
+    <snippet group="Text" trigger="baoifLinux" id="" complement="" removed="false" modified="false">#ifdef Q_OS_LINUX
+
+#endif</snippet>
+    <snippet group="Text" trigger="baoifMac" id="" complement="" removed="false" modified="false">#ifdef Q_OS_MACOS
+   
+#endif</snippet>
+    <snippet group="Text" trigger="baoifQt" id="" complement="" removed="false" modified="false">#if (QT_VERSION &gt;= QT_VERSION_CHECK(5,0,0))
+#else
+#endif</snippet>
+    <snippet group="Text" trigger="baoifRelease" id="" complement="" removed="false" modified="false">#ifdef RELEASE_MODE
+#else
+#endif</snippet>
+    <snippet group="Text" trigger="baoifWin" id="" complement="" removed="false" modified="false">#ifdef Q_OS_WIN
+    
+#endif</snippet>
+    <snippet group="Text" trigger="baoincludeQ" id="" complement="" removed="false" modified="false">#include &lt;$file$&gt;</snippet>
+    <snippet group="Text" trigger="baoLib" id="" complement="" removed="false" modified="false">#pragma comment (lib,&quot;.lib&quot;)</snippet>
+    <snippet group="Text" trigger="baoLog" id="" complement="" removed="false" modified="false">#ifdef HAS_LOG
+    qInfo() &lt;&lt; &quot;text&quot;;
+#endif</snippet>
     <snippet group="Text" trigger="baomap" id="" complement="" removed="false" modified="false">for(auto it = $map$.begin(); it != $map$.end();it++)
 {
     auto key = it.key();
     auto value = it.value();
 }</snippet>
-    <snippet group="Text" trigger="baoString" id="" complement="" removed="false" modified="false">const QString &amp;$Text$</snippet>
+    <snippet group="Text" trigger="baoqt3" id="" complement="" removed="false" modified="false">#include &lt;QtCore&gt;
+#include &lt;QtWidgets&gt;
+#include &lt;QtGui&gt;</snippet>
+    <snippet group="Text" trigger="baoString" id="" complement="" removed="false" modified="false">const QString &amp;$text$</snippet>
     <snippet group="Text" trigger="baoStringText" id="" complement="" removed="false" modified="false">const QString &amp;text</snippet>
     <snippet group="Text" trigger="baotrtr" id="" complement="" removed="false" modified="false">tr(&quot;$Text$&quot;)</snippet>
-    <snippet group="Text" trigger="baoUTF" id="" complement="" removed="false" modified="false">#pragma execution_character_set(&quot;utf-8&quot;)</snippet>
+    <snippet group="Text" trigger="baoUTF" id="" complement="" removed="false" modified="false">#ifdef _MSC_VER
+#pragma execution_character_set(&quot;utf-8&quot;)
+#endif</snippet>
     <snippet group="Text" trigger="baoVLayout" id="" complement="" removed="false" modified="false">auto layout = new QVBoxLayout(this);
 layout-&gt;setSpacing(10);
 layout-&gt;setMargin(0);
